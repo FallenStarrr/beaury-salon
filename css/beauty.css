@@ -2,7 +2,7 @@
 gvars
 ****************/
 /**************  
-gvars
+/gvars/
 ****************/
 /**************  
 globals
@@ -23,24 +23,32 @@ textarea {
   font-family: inherit;
 }
 
+html, body {
+  min-height: 100vh;
+}
+
 img {
   max-width: 100%;
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   background: #505E73;
   font-size: 18px;
   line-height: 1.6;
+  color: #fff;
   font-family: 'Noto Sans Mono', monospace;
 }
 
 .container {
+  padding: 21px;
   margin: auto;
   max-width: 1190px;
 }
 
 /**************  
-globals
+/globals/
 ****************/
 /**************  
 btns
@@ -65,7 +73,7 @@ btns
 }
 
 /**************  
-btns
+/btns/
 ****************/
 /**************  
 navbar
@@ -85,14 +93,74 @@ navbar
 
 .up__list {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /**************  
-navbar
+/navbar/
+****************/
+/**************  
+utility classes
 ****************/
 .flex {
   display: flex;
   width: 50%;
   justify-content: space-around;
+  align-items: center;
 }
+
+.pl-5 {
+  padding-left: 100px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+/**************  
+/utility classes/
+****************/
+/**************  
+content
+****************/
+.content {
+  margin-top: 112px;
+  flex: 1;
+}
+
+.intro {
+  height: 100%;
+  width: 100%;
+}
+
+.left-intro-block {
+  display: flex;
+  align-items: center;
+}
+
+.left-intro-block div:nth-child(2) {
+  flex: 3;
+}
+
+.check-list {
+  margin-top: 69px;
+}
+
+.first-button {
+  margin-top: 50px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/**************  
+/content
+****************/
+/**************  
+footer
+****************/
+/**************  
+/footer
+****************/
