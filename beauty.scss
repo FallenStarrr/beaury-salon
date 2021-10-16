@@ -84,6 +84,40 @@ font-size: 22px;
   
 }
 
+.btn--border {
+  border: 1px solid #E46365;
+}
+
+.btn--border:hover {
+  background: #E36365;
+}
+
+.btns {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  flex-flow: row;
+}
+
+.active {
+  background: #E36365;
+}
+
+.table {
+  background: $table-bg;
+  border-collapse: collapse;
+}
+
+.price-list__inner {
+  // filter: blur(1px)  drop-shadow(16px 16px 16px red) ;
+}
+
+
+
+td, th {
+  border: 1px solid rgba(255, 255, 255, 0.137);;
+}
+
 /**************  
 /btns/
 ****************/
@@ -136,6 +170,20 @@ utility classes
 .mt-20 {
   margin-top: 20px;
 }
+
+.header {
+  font-weight: bold;
+ font-size: 54px;
+ z-index: 1;
+ position: relative;
+}
+
+.header-img {
+  position: relative;
+  top: 90px;
+  right: 10px;
+
+ }
 /**************  
 /utility classes/
 ****************/
@@ -175,9 +223,116 @@ content
   display: flex;
   width: 100%;
   justify-content: space-between;
+
+}
+
+.card-container {
+  display: flex;
+  flex-flow:  wrap row;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+
+.why-card {
+    border: 3px solid  #E46365;
+    border-radius: 15px;
+    width: 257px;
+    height: 450px;
+    padding: 30px;
+}
+
+
+.prefer-list {
+  display: flex;
+  flex-flow: row wrap;
+}
+.prefer__inner {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.prefer__contain >   div {
+  display: flex;
+  flex-flow: row wrap ;
   align-items: center;
 }
 
+
+
+div.prefer__contain {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 3;
+}
+div.prefer__contain  li {
+  margin-left: 15px;
+}
+.prefer__contain-1 {
+  display: flex;
+  flex: 5;
+}
+
+.prefer__contain-1 p {
+  margin-left: 15px;
+}
+
+
+
+.testimonials__inner {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.testimonials__item {
+  flex: 1 1 200px;
+}
+.gallery  {
+display: flex;
+flex-flow:  column wrap;
+}
+  
+
+
+
+
+.gallery__item {
+  display: flex;
+}
+
+.certificate__inner {
+ display: flex;
+ justify-content: space-between;
+ flex-flow: row wrap;
+}
+
+.certificate__item img:hover {
+  background: #E46365;
+}
+
+details {
+  border-radius: 43px;
+  border: 1px solid  #E46365;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+summary {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 20px;
+}
+
+.question__inner {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.con__inner {
+  display: flex;
+  flex-flow: row wrap;
+}
 /**************  
 /content
 ****************/
@@ -191,9 +346,19 @@ content
 footer
 ****************/
 
+.footer {
+  background: $footer-bg;
+}
 
+.footer-low {
+  display: flex;
+  flex-direction: column;
+}
 
-
+.footer__nav {
+  border-bottom: 1px solid rgba(48, 178, 167, 0.3);
+  padding-bottom: 33px;
+}
 
 
 
